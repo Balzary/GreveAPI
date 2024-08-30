@@ -19,6 +19,10 @@ This is a Java API that contains a simple CRUD with three different forms of sea
 
 # Instalation 
 
+clone this project on a directory of your choice:
+
+  git clone 
+
 via Docker: 
 
 docker-compose up
