@@ -21,7 +21,11 @@ This is a Java API that contains a simple CRUD with three different forms of sea
 
 clone this project on a directory of your choice:
 
-  git clone 
+  git clone https://github.com/Balzary/GreveAPI.git
+
+  cd ~/organizadorGreve
+
+to install docker chek this out: https://docs.docker.com/desktop/
 
 via Docker: 
 
