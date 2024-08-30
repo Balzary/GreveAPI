@@ -25,19 +25,19 @@ public class Greve {
     @Column(name = "sindicato")
     private String sindicato;
 
-    @Column(name = "numero_trabalhadores")
-    private Long numeroTrabalhadores;
-
-    @Column(name = "local_greve")
+    @Column(name = "localGreve")
     private String localGreve;
 
-    @Column(name = "data_inicio")
-    private LocalDate dataInicio;
+    @Column(name = "numeroTrabalhadores")
+    private Long numeroTrabalhadores;
 
-    @Column(name = "data_fim")
-    private LocalDate dataFim;
+    @Column(name = "dataInicio")
+    private String dataInicio;
 
-    @Column(name = "estado_greve")
+    @Column(name = "dataFim")
+    private String dataFim;
+
+    @Column(name = "estadoGreve")
     private String estadoGreve;
 
     @CreationTimestamp
@@ -46,13 +46,13 @@ public class Greve {
     @UpdateTimestamp
     private Instant updateTimestamp;
 
-    public Greve(UUID greveID, String motivo, String categoria, String sindicato, Long numeroTrabalhadores, String localGreve, LocalDate dataInicio, LocalDate dataFim, String estadoGreve, Instant creationTimestamp, Instant updateTimestamp) {
+    public Greve(UUID greveID, String motivo, String categoria, String sindicato, String localGreve, Long numeroTrabalhadores, String dataInicio, String dataFim, String estadoGreve, Instant creationTimestamp, Instant updateTimestamp) {
         this.greveID = greveID;
         this.motivo = motivo;
         this.categoria = categoria;
         this.sindicato = sindicato;
-        this.numeroTrabalhadores = numeroTrabalhadores;
         this.localGreve = localGreve;
+        this.numeroTrabalhadores = numeroTrabalhadores;
         this.dataInicio = dataInicio;
         this.dataFim = dataFim;
         this.estadoGreve = estadoGreve;
@@ -119,19 +119,19 @@ public class Greve {
         this.estadoGreve = estadoGreve;
     }
 
-    public LocalDate getDataFim() {
+    public String getDataFim() {
         return dataFim;
     }
 
-    public void setDataFim(LocalDate dataFim) {
+    public void setDataFim(String dataFim) {
         this.dataFim = dataFim;
     }
 
-    public LocalDate getDataInicio() {
+    public String getDataInicio() {
         return dataInicio;
     }
 
-    public void setDataInicio(LocalDate dataInicio) {
+    public void setDataInicio(String dataInicio) {
         this.dataInicio = dataInicio;
     }
 

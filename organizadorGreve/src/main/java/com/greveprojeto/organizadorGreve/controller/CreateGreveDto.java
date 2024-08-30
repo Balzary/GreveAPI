@@ -5,9 +5,9 @@ import java.time.LocalDate;
 public record CreateGreveDto(String motivo,
                              String categoria,
                              String sindicato,
-                             Long numeroTrabalhadores,
                              String localGreve,
-                             LocalDate dataInicio,
-                             LocalDate dataFim,
+                             Long numeroTrabalhadores,
+                             String dataInicio,
+                             String dataFim,
                              String estadoGreve ) {
 }

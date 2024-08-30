@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 public record UpdateGreveDto(Long numeroTrabalhadores,
                              String localGreve,
-                             LocalDate dataInicio,
-                             LocalDate dataFim,
+                             String dataInicio,
+                             String dataFim,
                              String estadoGreve )  {
 }
