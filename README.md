@@ -33,15 +33,15 @@ via Docker:
 
     docker-compose up
     
-Curl para requests GET de "buscar todos as greves":
+Curl for GET requests "find all strikes":
     
     http://localhost:8080/v1/greve 
 
-Curl para requests POST "criar greve":
+Curl for POST requests "create strike":
     
     http://localhost:8080/v1/greve 
 
-E exemplo de JSON para criação de greve:
+And JSON example for strike creation:
 
     {
     	"motivo":"direitos de trabalho 6",
